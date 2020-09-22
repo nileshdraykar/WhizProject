@@ -32,7 +32,9 @@ if [ $LOCAL = $REMOTE ]; then
 elif [ $LOCAL = $BASE ]; then
     echo "Need to pull"
     git pull
+    cd ..
     xcrun agvtool next-version -all
+    cd WhizProject
     git commit -m "update build version"
     git push
     echo "Archiving the project"
