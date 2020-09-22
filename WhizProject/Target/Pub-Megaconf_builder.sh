@@ -23,7 +23,7 @@ cd $cur_dir/../
 #xcrun agvtool new-marketing-version 1.0
 pwd
 #git pull master
-#git status
+git status
 git remote update
 UPSTREAM=${1:-'@{u}'}
 LOCAL=$(git rev-parse @)
@@ -34,7 +34,7 @@ if [ $LOCAL = $REMOTE ]; then
     echo "Up-to-date"
 elif [ $LOCAL = $BASE ]; then
     echo "Need to pull"
-    git pull master
+    git pull
 elif [ $REMOTE = $BASE ]; then
     echo "Need to push"
     git commit -m "update build version"
