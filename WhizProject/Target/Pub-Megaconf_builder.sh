@@ -38,6 +38,7 @@ elif [ $LOCAL = $BASE ]; then
 elif [ $REMOTE = $BASE ]; then
     echo "Need to push"
     git commit -m "update build version"
+    git push
 else
     echo "Diverged"
 fi
