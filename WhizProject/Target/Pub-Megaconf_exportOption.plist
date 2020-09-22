@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>teamID</key>
+	<string>98FT28U9N2</string>
+	<key>signingCertificate</key>
+	<string>iPhone Distribution: Whiz Technologies Inc.</string>
+	<key>compileBitcode</key>
+	<false/>
+	<key>method</key>
+	<string>app-store</string>
+	<key>manifest</key>
+	<dict>
+		<key>appURL</key>
+		<string>null</string>
+		<key>fullSizeImageURL</key>
+		<string>null</string>
+		<key>displayImageURL</key>
+		<string>null</string>
+	</dict>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>com.whiz.megaconference</key>
+		<string>MegaConference Appstore Profile</string>
+	</dict>
+	<key>uploadSymbols</key>
+	<true/>
+	<key>uploadBitcode</key>
+	<false/>
+</dict>
+</plist>
