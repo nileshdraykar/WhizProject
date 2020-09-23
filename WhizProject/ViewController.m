@@ -20,7 +20,7 @@
     NSLog(@"Added new changes in this file");
     
     NSLog(@"final changess sdf");
-    NSLog(@"commited New changes in Second branch sfdf");
+    NSLog(@"commited New changes in Second branch 1234");
 
 }
 
