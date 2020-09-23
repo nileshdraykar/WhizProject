@@ -34,8 +34,6 @@ elif [ $LOCAL = $BASE ]; then
     git pull
     cd ..
     xcrun agvtool next-version -all
-    git commit -m "update build version"
-    git push
     echo "Archiving the project"
     xcodebuild archive -project $cur_dir/../../${PROJECT_NAME}.xcodeproj -scheme $IOS_SCHEME -configuration $IOS_CONFIGURATION -derivedDataPath $cur_dir/../../../build -archivePath $cur_dir/../../../build/Products/${PROJECT_NAME}.xcarchive
     unset GEM_HOME
@@ -53,6 +51,8 @@ elif [ $LOCAL = $BASE ]; then
     xcodebuild -exportArchive -archivePath $cur_dir/../../../build/Products/${PROJECT_NAME}.xcarchive -exportOptionsPlist $cur_dir/$AppStore_IOS_EXPORT_OPTIONS_PLIST -exportPath $cur_dir/../../../build/Products/IPA/$IOS_SCHEME/App_Store
 
     #xcrun altool --upload-app -f $cur_dir/../../../build/Products/IPA/$IOS_SCHEME/App_Store/$IOS_SCHEME.ipa -u $apple_id -p $password —output-format xml
+    git commit -m "update build version"
+    git push
 
 elif [ $REMOTE = $BASE ]; then
     echo "Need to push"
