@@ -31,10 +31,10 @@ if [ $LOCAL = $REMOTE ]; then
     echo "Up-to-date No changes found on Remote"
 elif [ $LOCAL = $BASE ]; then
     echo "Need to pull"
-    git pull
+    git pull origin master
     xcrun agvtool next-version -all
     git commit -m "update build version"
-    git push origin master
+    git push
     echo "Archiving the project"
     xcodebuild archive -project $cur_dir/../../${PROJECT_NAME}.xcodeproj -scheme $IOS_SCHEME -configuration $IOS_CONFIGURATION -derivedDataPath $cur_dir/../../../build -archivePath $cur_dir/../../../build/Products/${PROJECT_NAME}.xcarchive
     unset GEM_HOME
