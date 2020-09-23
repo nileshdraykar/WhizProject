@@ -34,7 +34,7 @@ elif [ $LOCAL = $BASE ]; then
     git pull
     xcrun agvtool next-version -all
     git commit -m "update build version"
-    git push
+    git push origin master
     echo "Archiving the project"
     xcodebuild archive -project $cur_dir/../../${PROJECT_NAME}.xcodeproj -scheme $IOS_SCHEME -configuration $IOS_CONFIGURATION -derivedDataPath $cur_dir/../../../build -archivePath $cur_dir/../../../build/Products/${PROJECT_NAME}.xcarchive
     unset GEM_HOME
