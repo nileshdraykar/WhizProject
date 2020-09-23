@@ -31,7 +31,7 @@ if [ $LOCAL = $REMOTE ]; then
     echo "Up-to-date No changes found on Remote"
 elif [ $LOCAL = $BASE ]; then
     echo "Need to pull"
-    git pull origin master
+    git pull
     xcrun agvtool next-version -all
     git commit -m "update build version"
     git push
