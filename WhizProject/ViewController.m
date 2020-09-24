@@ -18,7 +18,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    NSLog(@"last commited New changes in Bhavya branch Second test Branch");
 
 }
 
