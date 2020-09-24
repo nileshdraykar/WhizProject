@@ -18,7 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    NSLog(@"Last Commit and again Push changes   test");
+    NSLog(@"Last Commit and again Push changes");
 }
 
 
