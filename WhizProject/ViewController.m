@@ -17,10 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSLog(@"Added new changes in this file");
     
-    NSLog(@"final changess sdf");
-    NSLog(@"commited New changes in Second branch 1234");
+    NSLog(@"last commited New changes in Bhavya branch Second test Branch");
 
 }
 
