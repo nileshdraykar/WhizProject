@@ -52,7 +52,7 @@ elif [ $LOCAL = $BASE ]; then
 
     #xcrun altool --upload-app -f $cur_dir/../../../build/Products/IPA/$IOS_SCHEME/App_Store/$IOS_SCHEME.ipa -u $apple_id -p $password —output-format xml
     git commit -a -m "update build version"
-#    git push
+    git push
 
 elif [ $REMOTE = $BASE ]; then
     echo "Need to push"
