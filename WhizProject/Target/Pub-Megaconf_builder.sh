@@ -51,8 +51,8 @@ elif [ $LOCAL = $BASE ]; then
     xcodebuild -exportArchive -archivePath $cur_dir/../../../build/Products/${PROJECT_NAME}.xcarchive -exportOptionsPlist $cur_dir/$AppStore_IOS_EXPORT_OPTIONS_PLIST -exportPath $cur_dir/../../../build/Products/IPA/$IOS_SCHEME/App_Store
 
     #xcrun altool --upload-app -f $cur_dir/../../../build/Products/IPA/$IOS_SCHEME/App_Store/$IOS_SCHEME.ipa -u $apple_id -p $password —output-format xml
-    git commit -m "update build version"
-    git push
+    git commit -a -m "update build version"
+#    git push
 
 elif [ $REMOTE = $BASE ]; then
     echo "Need to push"
